@@ -1,14 +1,20 @@
 
-let light=document.querySelector("#light")
-let buttonone=document.querySelector("#btnOn")
-let button2=document.querySelector("#btnOff")
+let count=document.querySelector("#count")
+let btnincrement=document.querySelector("#btnincrement")
+let btnreset=document.querySelector("#btnreset")
  
-buttonone.addEventListener("click" , ()=>{
-    light.style.backgroundColor="yellow"
 
+
+
+let value=0
+btnincrement.addEventListener("click" , ()=>{
+
+    value++
+    count.innerHTML=value 
 })
 
-button2.addEventListener("click" , ()=>{
-    light.style.backgroundColor="white"
+btnreset.addEventListener("click" , ()=>{
 
+    value=0
+    count.innerHTML=value 
 })
